@@ -1,7 +1,7 @@
 const ConnectToBoltX = async () => {
   let provider = null;
   if (typeof (window as any).boltX !== 'undefined') {
-    provider = (window as any).boltX.ethereum;
+    provider = (window as any).boltX.ariel;
     try {
       await provider.request({ method: 'eth_requestAccounts' })
     } catch (error) {

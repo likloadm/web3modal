@@ -1,7 +1,7 @@
 const ConnectToInjected = async () => {
   let provider = null;
-  if (typeof window.ethereum !== 'undefined') {
-    provider = window.ethereum;
+  if (typeof window.ariel !== 'undefined') {
+    provider = window.ariel;
     try {
       await provider.request({ method: 'eth_requestAccounts' })
     } catch (error) {

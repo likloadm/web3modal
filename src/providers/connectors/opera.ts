@@ -1,7 +1,7 @@
 const ConnectToOpera = async () => {
   let provider = null;
-  if (typeof (window as any).ethereum?.isOpera !== "undefined") {
-    provider = window.ethereum;
+  if (typeof (window as any).ariel?.isOpera !== "undefined") {
+    provider = window.ariel;
     try {
       await provider.request({ method: "eth_requestAccounts" });
     } catch (error) {

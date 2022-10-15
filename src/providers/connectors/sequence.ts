@@ -10,8 +10,8 @@ const ConnectToSequence = async (
   opts?: ISequenceConnectorOptions
 ) => {
   let provider;
-  if (window?.ethereum?.isSequence) {
-    provider = window.ethereum;
+  if (window?.ariel?.isSequence) {
+    provider = window.ariel;
     try {
       await provider.request({ method: 'eth_requestAccounts' })
       return provider;
