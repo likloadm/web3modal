@@ -14,6 +14,7 @@ import { SimpleFunction, IProviderUserOptions, ThemeColors } from "../helpers";
 declare global {
   // tslint:disable-next-line
   interface Window {
+    ariel: any;
     ethereum: any;
     BinanceChain: any;
     web3: any;
