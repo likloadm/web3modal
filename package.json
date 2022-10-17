@@ -42,7 +42,6 @@
     "url": "https://github.com/web3modal/web3modal/issues"
   },
   "scripts": {
-    "install": "npm run build",
     "prepare": "npm run clean && npm run build",
     "clean": "rm -rf dist",
     "clean:example": "rm -rf example/build",
@@ -85,7 +84,9 @@
     "tslint-config-prettier": "^1.18.0",
     "tslint-config-standard": "^8.0.1",
     "typescript": "^3.1.3",
-    "url-loader": "^1.1.2"
+    "url-loader": "^1.1.2",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.2.1"
   },
   "dependencies": {
     "detect-browser": "^5.1.0",
@@ -93,8 +94,6 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "styled-components": "^5.3.3",
-    "tslib": "^1.10.0",
-    "webpack": "^4.44.2",
-    "webpack-cli": "^3.2.1"
+    "tslib": "^1.10.0"
   }
 }
